@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="wrapper" style="-webkit-transform:  translate(-50%, -50%)">
+            <img class="logo" src="./assets/logo.png">
+            <div class="client">
+                <div class="column left">
+                    <div class="account">
+                        <img id="account-skin" src="assets/Bat.png" alt="">
+                        <div class="skin-overlay"></div>
+                        <div class="content">
+                            <p class="username">WWWWWWWWWWWWWWWWWWWWWWWWW</p>
+                            <p class="coins">
+                                <i class="fas fa-coins"></i>
+                                <span id="coins-amount">863</span>
+                                <span class="buy-coins">+</span>
+                            </p>
+                            <p class="coins-2">
+                                <i class="fas fa-gem"></i>
+                                <span id="coins-amount">4127</span>
+                            </p>
+                            <p class="level-amount">Level <span id="level">255</span></p>
+                            <div class="level-bar progress">
+                                <div id="level-bar"
+                                    class="progress-bar progress-bar-striped progress-bar-animated ultrex-orange-bg"
+                                    role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 37%;">37%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu-list">
+                            <div data-nav-btn data-nav="home" class="active button">
+                                <p>Home</p>
+                            </div>
+                            <div data-nav-btn data-nav="chests" class="button">
+                                <p>Chests <span class="badge ultrex-orange-bg">updated</span></p>
+                            </div>
+                            <div data-nav-btn data-nav="shop" class="button">
+                                <p>Shop <span class="badge ultrex-orange-bg">updated</span></p>
+                            </div>
+                            <div data-nav-btn data-nav="ushop" class="button">
+                                <p>UShop <span class="badge ultrex-orange-bg">new</span></p>
+                            </div>
+                            <div data-nav-btn data-nav="rankings" class="button">
+                                <p>Rankings</p>
+                            </div>
+                            <div data-nav-btn data-nav="challenges" class="button">
+                                <p>Challenges <span class="badge ultrex-orange-bg">new</span></p>
+                            </div>
+                            <div data-nav="achievements" class="button locked">
+                                <p>Achievements <span class="badge ultrex-orange-bg">coming soon</span></p>
+                            </div>
+                            <div data-nav-btn data-nav="upass" class="button">
+                                <p>UPass <span class="badge ultrex-orange-bg">new</span></p>
+                            </div>
+                            <div data-nav-btn data-nav="settings" class="button">
+                                <p>Settings</p>
+                            </div>
+                            <div class="button">
+                                <p>Logout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column center">
+                    <div class="content" data-nav-target="home">
+                        <input type="text" id="nickname" placeholder="Nickname" spellcheck="false" autocomplete="off"
+                            maxlength="20">
+                        <button class="btn ultrex-orange-bg text-white"><i class="fas fa-play"></i></button>
+                        <button class="btn btn-secondary text-white"><i class="fas fa-eye"></i></button>
+                        <div class="ad">
+                            <p>300x250</p>
+                        </div>
+                    </div>
+                    <div data-nav-target="chests" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">Chests left: 10</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <div data-nav-target="shop" style="display: none;">
+                        <div class="shop-btn"
+                            style="background-image: url(https://xgar.io/resources/images/skinssection.png?v=3)"
+                            data-nav-btn data-nav="shop-skins"></div>
+                        <div class="shop-btn"
+                            style="background-image: url(https://xgar.io/resources/images/hatssection.png?v=3)"
+                            data-nav-btn data-nav="shop-hats"></div>
+                        <div class="shop-btn"
+                            style="background-image: url(https://xgar.io/resources/images/massboostsection.png?v=3)"
+                            data-nav-btn data-nav="shop-mass"></div>
+                        <div class="shop-btn"
+                            style="background-image: url(https://xgar.io/resources/images/xpboostsection.png?v=3)"
+                            data-nav-btn data-nav="shop-xp"></div>
+                        <div class="shop-btn"
+                            style="background-image: url(https://xgar.io/resources/images/botssection.png?v=3)"
+                            data-nav-btn data-nav="shop-bots"></div>
+                        <div class="shop-btn"
+                            style="background-image: url(https://xgar.io/resources/images/colorsection.png?v=3)"
+                            data-nav-btn data-nav="shop-name"></div>
+                        <div class="shop-btn large"
+                            style="background-image: url(https://xgar.io/resources/images/coinssection.png?v=3)"
+                            data-nav-btn data-nav="shop-coins"></div>
+                    </div>
+                    <div data-nav-target="shop-skins" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" data-toggle="tab" role="tab" href="#skins-owned"
+                                    aria-selected="true">Owned Skins</a>
+                                <a class="nav-item nav-link" data-toggle="tab" role="tab" href="#skins-premium"
+                                    aria-selected="true">Premium Skins</a>
+                                <a class="nav-item nav-link" data-toggle="tab" role="tab" href="#skins-level"
+                                    aria-selected="true">Level Skins</a>
+                                <a class="nav-item nav-link" data-toggle="tab" role="tab" href="#skins-fragments"
+                                    aria-selected="true">Skin Fragments</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="skins-owned" role="tabpanel">
+                                <div class="skin-card equipped">
+                                    <div class="skin-card-title">
+                                        Bat
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        Equipped
+                                    </div>
+                                </div>
+                                <div class="skin-card">
+                                    <div class="skin-card-title">
+                                        Bat
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        Equip
+                                    </div>
+                                </div>
+                                <div class="skin-card">
+                                    <div class="skin-card-title">
+                                        Bat
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        Equip
+                                    </div>
+                                </div>
+                                <div class="skin-card">
+                                    <div class="skin-card-title">
+                                        Bat
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        Equip
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="skins-premium" role="tabpanel">
+                                <div class="skin-card">
+                                    <div class="skin-card-title">
+                                        Bat
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        <i class="fas fa-coins"></i> 50000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="skins-level" role="tabpanel">
+                                <div class="skin-card locked">
+                                    <div class="skin-card-title">
+                                        Level 10
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        <i class="fas fa-lock"></i> LOCKED
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="skins-fragments" role="tabpanel">
+                                <div class="skin-card">
+                                    <div class="skin-card-title">
+                                        Ghost
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        233 / 900
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HATS -->
+                    <div data-nav-target="shop-hats" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" data-toggle="tab" role="tab" href="#hats-owned"
+                                    aria-selected="true">Owned Hats</a>
+                                <a class="nav-item nav-link" data-toggle="tab" role="tab" href="#hats-premium"
+                                    aria-selected="true">Premium Hats</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="hats-owned" role="tabpanel">
+                                <!-- <div class="skin-card">
+                                    <div class="skin-card-title">
+                                        Ghost
+                                    </div>
+                                    <img src="assets/Bat.png" class="skin-card-background">
+                                    <div class="skin-card-gradient"></div>
+                                    <img src="assets/Bat.png" class="skin-card-skin">
+                                    <div class="skin-card-footer">
+                                        233 / 900
+                                    </div>
+                                </div> -->
+                                <!-- USE SKIN CARDS FOR HATS FOR NOW. -->
+                            </div>
+                            <div class="tab-pane" id="hats-premium" role="tabpanel">2</div>
+                        </div>
+                    </div>
+                    <!-- MASS BOOST -->
+                    <div data-nav-target="shop-mass" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">You don't have an
+                                    active mass boost</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- XP BOOST -->
+                    <div data-nav-target="shop-xp" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">You don't have an
+                                    active xp boost</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- BOTS -->
+                    <div data-nav-target="shop-bots" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">You don't have an
+                                    active bots plan</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- COLORED NAME -->
+                    <div data-nav-target="shop-name" style="display: none;">
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- COINS -->
+                    <div data-nav-target="shop-coins" style="display: none;">
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- USHOP -->
+                    <div data-nav-target="ushop" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">UShop resets in
+                                    09:04:21</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- RANKINGS -->
+                    <div data-nav-target="rankings" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">Top 100</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- CHALLENGES -->
+                    <div data-nav-target="challenges" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">Challenges left:
+                                    4</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- UPASS -->
+                    <div data-nav-target="upass" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">Tier 28</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- SETTINGS -->
+                    <div data-nav-target="settings" style="display: none;">
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="regions">
+                        <div data-region="eu" class="active">EU</div>
+                        <div data-region="na" class="locked">NA</div>
+                    </div>
+                    <div class="servers">
+                        <div class="server-list" data-server-list="eu">
+                            <div>
+                                <p>FFA <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/100</span>
+                            </div>
+                            <div>
+                                <p>Giant</p>
+                                <span>0/50</span>
+                            </div>
+                            <div class="active">
+                                <p>Megasplit <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/100</span>
+                            </div>
+                            <div>
+                                <p>Ultra Split</p>
+                                <span>0/40</span>
+                            </div>
+                            <div>
+                                <p>Ultra Merge <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/36</span>
+                            </div>
+                            <div>
+                                <p>Crazy Bots</p>
+                                <span>0/35</span>
+                            </div>
+                            <div>
+                                <p>Ultra Feed</p>
+                                <span>0/40</span>
+                            </div>
+                            <div>
+                                <p>Extreme Selffeed</p>
+                                <span>0/50</span>
+                            </div>
+                            <div>
+                                <p>Crazy Selffeed <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/40</span>
+                            </div>
+                            <div>
+                                <p>Selffeed <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/40</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a>Terms of Service</a>
+                    <a>Privacy Policy</a>
+                    <a>Discord</a>
+                    <a>About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

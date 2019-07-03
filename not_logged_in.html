@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="wrapper" style="-webkit-transform:  translate(-50%, -50%)">
+            <img class="logo" src="./assets/logo.png">
+            <div class="client">
+                <div class="column left">
+                    <div class="menu">
+                        <div class="menu-list">
+                            <div data-nav-btn data-nav="home" class="active button">
+                                <p>Home</p>
+                            </div>
+                            <div data-nav-btn data-nav="rankings" class="button">
+                                <p>Rankings</p>
+                            </div>
+                            <div data-nav-btn data-nav="settings" class="button">
+                                <p>Settings</p>
+                            </div>
+                            <div data-nav-btn data-nav="login" class="button">
+                                <p>Login</p>
+                            </div>
+                            <div data-nav-btn data-nav="register" class="button">
+                                <p>Register</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column center">
+                    <div class="content" data-nav-target="home">
+                        <input type="text" id="nickname" placeholder="Nickname" spellcheck="false" autocomplete="off"
+                            maxlength="20">
+                        <button class="btn ultrex-orange-bg text-white"><i class="fas fa-play"></i></button>
+                        <button class="btn btn-secondary text-white"><i class="fas fa-eye"></i></button>
+                        <div class="ad">
+                            <p>300x250</p>
+                        </div>
+                    </div>
+                    <!-- RANKINGS -->
+                    <div data-nav-target="rankings" style="display: none;">
+                        <nav class="nav-justified">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link no-link" role="tab" aria-selected="true">Top 100</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                    <!-- SETTINGS -->
+                    <div data-nav-target="settings" style="display: none;">
+                        <div class="tab-content">
+                            <div class="tab-pane show active" role="tabpanel">1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="regions">
+                        <div data-region="eu" class="active">EU</div>
+                        <div data-region="na" class="locked">NA</div>
+                    </div>
+                    <div class="servers">
+                        <div class="server-list" data-server-list="eu">
+                            <div>
+                                <p>FFA <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/100</span>
+                            </div>
+                            <div>
+                                <p>Giant</p>
+                                <span>0/50</span>
+                            </div>
+                            <div class="active">
+                                <p>Megasplit <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/100</span>
+                            </div>
+                            <div>
+                                <p>Ultra Split</p>
+                                <span>0/40</span>
+                            </div>
+                            <div>
+                                <p>Ultra Merge <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/36</span>
+                            </div>
+                            <div>
+                                <p>Crazy Bots</p>
+                                <span>0/35</span>
+                            </div>
+                            <div>
+                                <p>Ultra Feed</p>
+                                <span>0/40</span>
+                            </div>
+                            <div>
+                                <p>Extreme Selffeed</p>
+                                <span>0/50</span>
+                            </div>
+                            <div>
+                                <p>Crazy Selffeed <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/40</span>
+                            </div>
+                            <div>
+                                <p>Selffeed <span class="badge ultrex-orange-bg">new</span></p>
+                                <span>0/40</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a>Terms of Service</a>
+                    <a>Privacy Policy</a>
+                    <a>Discord</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
